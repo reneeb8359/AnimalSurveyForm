@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+  <head>
+  <title> Animal Survey</title>
+  </head>
+
+  <body>
+    <h1 id="title">Animal Survey</h1>
+    <p id="description">Please fill out this form with the required information.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Enter Your Name: <input id="name"   type="text" placeholder="Name" required>
+        </label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" type="email"placeholder="Email" required>
+        </label>
+        <label id="number-label" for="number">Enter Your Age: (optional) <input id="number" type="number" min="13" max="120" placeholder="Age">
+        </label>
+      </fieldset>
+
+      <fieldset>
+       <label id="answer-key" for="answer-key" >Do you love animals?
+         <input id="answer-key" type="radio" name="answer-key" class="inline" value="Yes" required>Yes
+         <input id="answer-key" type="radio" name="answer-key" class="inline" value="No" required>No
+       </label>   
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown" >What is your favorite type animal?
+         <select id="dropdown">
+           <option value="">Dogs
+           </option> 
+           <option value="1"> Cats
+           </option>
+           <option value="2"> Monkeys
+           </option>
+           <option value="3"> Rabbit
+           </option>
+           <option value="4"> Other
+           </option>
+         </select>
+        </label>
+        <label id="other" for="other">If you selected "Other", please enter the name of the animal<input id="animal" type="text" placeholder="Animal name" ></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="animal">What do you like the most about your favorite animal? (Select all that apply):
+          <div>
+            <input id="animal" type="checkbox" name="animal" class="inline" value="love"> They will love you forever
+          </div>
+          <div>
+            <input id="animal" type="checkbox" name="animal" class="inline" value="judge"> They will never judge you
+          </div>
+          <div>
+            <input id="animal" type="checkbox" name="animal" class="inline" value="protective"> They are always very protective
+          </div>
+          <div>
+            <input id="animal" type="checkbox" name="animal" class="inline" value="loyal"> They will always be loyal
+          </div>
+          <div>
+            <input id="animal" type="checkbox" name="animal" class="inline" value="best"> They brings out the best in us
+          </div>
+          <div>
+            <input id="animal" type="checkbox" name="animal" class="inline" value="cheer"> They always know how to cheer us up
+          </div>
+          <div>
+            <input id="animal" type="checkbox" name="animal" class="inline" value="attention"> They like to give and receive lots of attention
+          </div>
+          <div>
+            <input id="animal" type="checkbox" name="animal" class="inline" value="complain"> They never complain about anything
+          </div>
+        </label>
+        <label for="reason">Why do you love your favorite animal?
+          <textarea id="reason" name="reason" rows="3" cols="30" placeholder="My favorite animal is... It is my favorite because..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+
+</html>
